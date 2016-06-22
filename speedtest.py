@@ -1,5 +1,6 @@
 import os
 import subprocess
+import smtplib
 
 #os.system("ssh Trendkite@10.101.20.251")
 #os.system("speedtest-cli")
@@ -12,4 +13,4 @@ mbps_float = float(mbps)
 if mbps_float > 40:
 	print "holy crap " + mbps + "mbps!"
 else:
-	print "Bad news... Only" + mbps + "mbps"
+	print "Oh noes... Only" + mbps + "mbps"
