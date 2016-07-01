@@ -1,8 +1,11 @@
 import dns.resolver
 import pandas as pd
+import re
 
 my_resolver_old = dns.resolver.Resolver()
 my_resolver_old.nameservers = ['216.69.185.10']
+server = str(my_resolver_old.nameservers)
+server = server.strip("[]'")
 
 data = pd.read_csv("cnames.csv", header=0)
 
@@ -26,8 +29,8 @@ for x in cname:
 			rdata = str(rdata)
 			if csv_var != rdata:
 				print "UH OH"
-				print 'godaddy says: ' + rdata
-				print 'spreadsheet says: ' +csv_var
+				print x +'.trendkit.com \n' + server + ' says: ' + rdata + ' // ' 'spreadsheet says: ' +csv_var
+				#print  'spreadsheet says: ' +csv_var
 				print '\n'
 			#else:
 			#	print "no match!"
