@@ -21,6 +21,8 @@ for ip in IPs:
 	cname = list(data.Name)
 	cname_actual = list(data.Value)
 
+
+
 	cn = 0
 	print 'CNAME '+ ip_num + ' ' + ip +':'
 	for x in cname:
