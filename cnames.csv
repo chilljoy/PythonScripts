@@ -34,7 +34,7 @@ duplicate-service,internal-duplicate-prod-main-2094344239.us-east-1.elb.amazonaw
 mobilemail,mobilemail-v01.prod.mesa1.secureserver.net
 staging-grails,delete-me.com
 dev,webapp-dev-main.pub-aws.trendkite.com
-ftp,@
+ftp,trendkite.com
 legacy,grails-cs-prod-514970555.us-east-1.elb.amazonaws.com
 logstash,internal-logging-logstash-elb-1941184879.us-east-1.elb.amazonaws.com
 email,email.secureserver.net
